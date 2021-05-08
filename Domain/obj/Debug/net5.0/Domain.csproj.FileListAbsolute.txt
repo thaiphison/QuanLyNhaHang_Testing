@@ -1,0 +1,84 @@
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\Admin\source\repos\CleanArchQLNH\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\Admin\source\repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.pdb
+D:\Download\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.deps.json
+D:\Download\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.dll
+D:\Download\QuanLyNhaHang\Domain\bin\Debug\net5.0\ref\Domain.dll
+D:\Download\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.pdb
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.dll
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\ref\Domain.dll
+D:\Download\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\HP\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\tran\Source\Repos\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.pdb
