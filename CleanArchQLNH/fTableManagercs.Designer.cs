@@ -232,6 +232,7 @@ namespace CleanArchQLNH
             this.btnGopBan.TabIndex = 7;
             this.btnGopBan.Text = "Gộp bàn";
             this.btnGopBan.UseVisualStyleBackColor = false;
+            this.btnGopBan.Click += new System.EventHandler(this.btnGopBan_Click);
             // 
             // cbSwitchTable
             // 

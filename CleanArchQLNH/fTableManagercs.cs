@@ -91,12 +91,12 @@ namespace CleanArchQLNH
             BindingSource table = new BindingSource();
             table.DataSource = BanAnInfras.Instance.LoadTableList();
 
+            BindingSource tableall = new BindingSource();
+            tableall.DataSource = BanAnInfras.Instance.LoadTableListI();
 
-            BindingSource all_table = new BindingSource();
-            all_table.DataSource = BanAnInfras.Instance.LoadTableListI();
-
-            cmbGopBan.DataSource = all_table.DataSource;
+            cmbGopBan.DataSource = tableall.DataSource;
             cmbGopBan.DisplayMember = "MaB";
+            cmbGopBan.ValueMember = "MaB";
             cbSwitchTable.DataSource = table.DataSource;
             cbSwitchTable.DisplayMember = "MaB";
             cbSwitchTable.ValueMember = "MaB";
@@ -1267,6 +1267,102 @@ namespace CleanArchQLNH
                 lvBill.Items.Clear();
                 LoadData();
                 LoadTable();
+            }
+        }
+
+        private void btnGopBan_Click(object sender, EventArgs e)
+        {
+            BANAN banan = lvBill.Tag as BANAN;
+            string maHD = HoaDonInfras.Instance.GetUncheckBillIdByTableId(banan.MaB);
+
+            int maBanGop = Convert.ToInt32(this.cmbGopBan.SelectedValue.ToString());
+            string maHDBanGop = HoaDonInfras.Instance.GetUncheckBillIdByTableId(maBanGop);
+
+            if (maHD != "-1")
+            {
+               // List<MENU> listCTHD = MenuInfras.Instance.GetListMenuByTable(banan.MaB);
+
+                if (maHDBanGop != "-1")
+                {
+                   // List<MENU> listCTHDBanGop = MenuInfras.Instance.GetListMenuByTable(maBanGop);
+                    MessageBox.Show("Cả hai bàn đều đang mở", "Thông báo");
+                }
+                else
+                {
+                    if (banan.MaB == maBanGop)
+                    {
+                        MessageBox.Show("Bàn cần gộp trùng với bàn hiện tại", "Thông báo");
+                    }
+                    else if ((banan.MaB <= 16 && maBanGop > 16) || (banan.MaB > 16 && maBanGop <= 16))
+                    {
+                        MessageBox.Show("Bàn cần gộp phải chung tầng", "Thông báo");
+                    }
+                    else
+                    {
+                        string manv = this.loginAccount.MaNV;
+                        string makm = this.cbDisscount.SelectedValue.ToString();
+                        int slkhach = (int)this.nudAddSoKhach.Value;
+
+                        HoaDonInfras.Instance.InsertHoaDon(manv, maBanGop, makm, slkhach);
+                        BanAnInfras.Instance.SwitchTable(maBanGop, 2);
+
+                        LoadData();
+                        LoadTable();
+                    }
+                }
+            }
+            else
+            {
+                if(maHDBanGop != "-1")
+                {
+                    if (banan.MaB == maBanGop)
+                    {
+                        MessageBox.Show("Bàn cần gộp trùng với bàn hiện tại", "Thông báo");
+                    }
+                    else if ((banan.MaB <= 16 && maBanGop > 16) || (banan.MaB > 16 && maBanGop <= 16))
+                    {
+                        MessageBox.Show("Bàn cần gộp phải chung tầng", "Thông báo");
+                    }
+                    else
+                    {
+                        string manv = this.loginAccount.MaNV;
+                        string makm = this.cbDisscount.SelectedValue.ToString();
+                        int slkhach = (int)this.nudAddSoKhach.Value;
+
+                        HoaDonInfras.Instance.InsertHoaDon(manv, banan.MaB, makm, slkhach);
+                        //CTHDInfras.Instance.InsertCTHD(HoaDonInfras.Instance.getMaxIdHD(), mamon, slmon, tongtien);
+                        BanAnInfras.Instance.SwitchTable(banan.MaB, 2);
+
+                        LoadData();
+                        LoadTable();
+                    }
+                }
+                else
+                {
+                    if (banan.MaB == maBanGop)
+                    {
+                        MessageBox.Show("Bàn cần gộp trùng với bàn hiện tại", "Thông báo");
+                    }
+                    else if ((banan.MaB <= 16 && maBanGop > 16) || (banan.MaB > 16 && maBanGop <= 16))
+                    {
+                        MessageBox.Show("Bàn cần gộp phải chung tầng", "Thông báo");
+                    }
+                    else
+                    {
+                        string manv = this.loginAccount.MaNV;
+                        string makm = this.cbDisscount.SelectedValue.ToString();
+                        int slkhach = (int)this.nudAddSoKhach.Value;
+
+                        HoaDonInfras.Instance.InsertHoaDon(manv, banan.MaB, makm, slkhach);
+                        BanAnInfras.Instance.SwitchTable(banan.MaB, 2);
+
+                        HoaDonInfras.Instance.InsertHoaDon(manv, maBanGop, makm, slkhach);
+                        BanAnInfras.Instance.SwitchTable(maBanGop, 2);
+
+                        LoadData();
+                        LoadTable();
+                    }
+                }
             }
         }
 

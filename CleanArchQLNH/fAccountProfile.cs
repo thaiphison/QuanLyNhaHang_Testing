@@ -78,17 +78,17 @@ namespace CleanArchQLNH
             string chucvu = txtPosition.Text.ToString();
             string matkhau = txtPassWord.Text;
             int n = 0;
-            if (this.txtFullName.Text.Length != 0 && this.txtAddress.Text.Length != 0 && this.txtPassWord.Text.Length != 0)
+            if (this.txtFullName.Text.Replace(" ","").Length != 0 && this.txtAddress.Text.Replace(" ", "").Length != 0 && this.txtPassWord.Text.Replace(" ", "").Length != 0)
             {
                 if (int.TryParse(this.txtIdentity.Text, out n))
                 {
-                    if (this.txtIdentity.Text.Length == 9)
+                    if (this.txtIdentity.Text.Replace(" ", "").Length == 9)
                     {
                         cmnd = txtIdentity.Text;
                         n = 0;
                         if (int.TryParse(this.txtPhoneNumber.Text, out n))
                         {
-                            if (this.txtPhoneNumber.Text.Length == 10)
+                            if (this.txtPhoneNumber.Text.Replace(" ", "").Length == 10)
                             {
                                 sdtnv = txtPhoneNumber.Text;
                                 UpdateAccountProfileInfras.Instance.UpdateAccountProfile(manv, hotennv, cmnd, sdtnv, diachi, chucvu, matkhau);
