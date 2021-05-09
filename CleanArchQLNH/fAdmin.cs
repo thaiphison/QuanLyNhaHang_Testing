@@ -79,48 +79,97 @@ namespace CleanArchQLNH
             string thang = cmbMonthsInViewBill.Text;
             string nam = cmbYearsInViewBill.Text;
 
-            if (ngay == "" && thang == "" && nam == "")
+            if(ngay.Replace(" ", "") != "")
+            {
+                if (Int32.Parse(ngay.ToString().Replace(" ", "")) < 10)
+                {
+                    ngay = "0" + ngay;
+                }
+            }
+            
+            if(thang.Replace(" ", "") != "")
+            {
+                if (Int32.Parse(thang.ToString().Replace(" ", "")) < 10)
+                {
+                    thang = "0" + thang;
+                }
+            }
+
+            if (ngay.Replace(" ","") == "" && thang.Replace(" ", "") == "" && nam.Replace(" ", "") == "")
             {
                 MessageBox.Show("Hãy chọn ngày cần thống kê", "Thông báo");
             }
-            else if (ngay == "" && thang == "" && nam != "")
+            else if (ngay.Replace(" ", "") == "" && thang.Replace(" ", "") == "" && nam.Replace(" ", "") != "")
             {
                 dtgvBill.DataSource = ThongKeInfras.Instance.LoadThongKeNam(nam);
+                dtgvBill.Columns[0].HeaderText = "Thời gian";
+                dtgvBill.Columns[0].Width = 100;
+                dtgvBill.Columns[1].HeaderText = "Tổng doanh thu";
+                dtgvBill.Columns[1].Width = 70;
+                dtgvBill.Columns[2].HeaderText = "Món bán chạy";
+                dtgvBill.Columns[2].Width = 150;
+                dtgvBill.Columns[3].HeaderText = "Tổng số order";
+                dtgvBill.Columns[3].Width = 70;
+                dtgvBill.Columns[4].HeaderText = "Chương trình khuyến mãi";
+                dtgvBill.Columns[4].Width = 150;
+                dtgvBill.Columns[5].HeaderText = "Số lần áp dụng";
+                dtgvBill.Columns[5].Width = 70;
+                dtgvBill.Columns[6].HeaderText = "Tổng lương nhân viên";
+                dtgvBill.Columns[6].Width = 70;
             }
-            else if (ngay == "" && thang != "" && nam != "")
+            else if (ngay.Replace(" ", "") == "" && thang.Replace(" ", "") != "" && nam.Replace(" ", "") != "")
             {
                 dtgvBill.DataSource = ThongKeInfras.Instance.LoadThongKeThang(thang, nam);
+                dtgvBill.Columns[0].HeaderText = "Thời gian";
+                dtgvBill.Columns[0].Width = 100;
+                dtgvBill.Columns[1].HeaderText = "Tổng doanh thu";
+                dtgvBill.Columns[1].Width = 70;
+                dtgvBill.Columns[2].HeaderText = "Món bán chạy";
+                dtgvBill.Columns[2].Width = 150;
+                dtgvBill.Columns[3].HeaderText = "Tổng số order";
+                dtgvBill.Columns[3].Width = 70;
+                dtgvBill.Columns[4].HeaderText = "Chương trình khuyến mãi";
+                dtgvBill.Columns[4].Width = 150;
+                dtgvBill.Columns[5].HeaderText = "Số lần áp dụng";
+                dtgvBill.Columns[5].Width = 70;
+                dtgvBill.Columns[6].HeaderText = "Tổng lương nhân viên";
+                dtgvBill.Columns[6].Width = 70;
             }
-            else if (ngay != "" && thang == "" && nam != "")
+            else if (ngay.Replace(" ", "") != "" && thang.Replace(" ", "") == "" && nam.Replace(" ", "") != "")
             {
                 MessageBox.Show("Hãy chọn tháng cần thống kê", "Thông báo");
             }
-            else if (ngay != "" && thang != "" && nam == "")
+            else if (ngay.Replace(" ", "") != "" && thang.Replace(" ", "") != "" && nam.Replace(" ", "") == "")
             {
                 MessageBox.Show("Hãy chọn năm cần thống kê", "Thông báo");
             }
-            else if (ngay == "" && thang != "" && nam == "")
+            else if (ngay.Replace(" ", "") == "" && thang.Replace(" ", "") != "" && nam.Replace(" ", "") == "")
             {
                 MessageBox.Show("Hãy chọn ngày và năm cần thống kê", "Thông báo");
             }
-            else
+            else if (ngay.Replace(" ", "") != "" && thang.Replace(" ", "") == "" && nam.Replace(" ", "") == "")
+            {
+                MessageBox.Show("Hãy chọn tháng và năm cần thống kê", "Thông báo");
+            }
+            else if (ngay.Replace(" ", "") != "" && thang.Replace(" ", "") != "" && nam.Replace(" ", "") != "")
             {
                 dtgvBill.DataSource = ThongKeInfras.Instance.LoadThongKeNgay(ngay, thang, nam);
+                dtgvBill.Columns[0].HeaderText = "Thời gian";
+                dtgvBill.Columns[0].Width = 100;
+                dtgvBill.Columns[1].HeaderText = "Tổng doanh thu";
+                dtgvBill.Columns[1].Width = 70;
+                dtgvBill.Columns[2].HeaderText = "Món bán chạy";
+                dtgvBill.Columns[2].Width = 150;
+                dtgvBill.Columns[3].HeaderText = "Tổng số order";
+                dtgvBill.Columns[3].Width = 70;
+                dtgvBill.Columns[4].HeaderText = "Chương trình khuyến mãi";
+                dtgvBill.Columns[4].Width = 150;
+                dtgvBill.Columns[5].HeaderText = "Số lần áp dụng";
+                dtgvBill.Columns[5].Width = 70;
+                dtgvBill.Columns[6].HeaderText = "Tổng lương nhân viên";
+                dtgvBill.Columns[6].Width = 70;
             }
-            dtgvBill.Columns[0].HeaderText = "Thời gian";
-            dtgvBill.Columns[0].Width = 100;
-            dtgvBill.Columns[1].HeaderText = "Tổng doanh thu";
-            dtgvBill.Columns[1].Width = 70;
-            dtgvBill.Columns[2].HeaderText = "Món bán chạy";
-            dtgvBill.Columns[2].Width = 150;
-            dtgvBill.Columns[3].HeaderText = "Tổng số order";
-            dtgvBill.Columns[3].Width = 70;
-            dtgvBill.Columns[4].HeaderText = "Chương trình khuyến mãi";
-            dtgvBill.Columns[4].Width = 150;
-            dtgvBill.Columns[5].HeaderText = "Số lần áp dụng";
-            dtgvBill.Columns[5].Width = 70;
-            dtgvBill.Columns[6].HeaderText = "Tổng lương nhân viên";
-            dtgvBill.Columns[6].Width = 70;
+            
         }
         //
         //Food
@@ -159,27 +208,52 @@ namespace CleanArchQLNH
         //
         private void btnAddFood_Click(object sender, EventArgs e)
         {
+
+            List<MONAN> dsmonan = MonAnInfras.Instance.LoadFoodList();
             string mam = txtIDFood.Text;
             string tenm = txtFoodName.Text;
             decimal gia;
             int n = 0;
-            if (int.TryParse(this.txtFoodPrice.Text, out n))
+            int flag = 0;
+            foreach (MONAN monan in dsmonan)
             {
-                gia = decimal.Parse(txtFoodPrice.Text);
-                if (MonAnInfras.Instance.ThemMonAn(mam, tenm, gia) == 1)
+                if (monan.TenM == tenm)
                 {
-                    MessageBox.Show("Thêm món ăn thành công");
-                    LoadFoodListF();
+                    flag = 1;
+                }
+            }
+            if (this.txtFoodName.Text.ToString().Replace(" ", "") != "")
+            {
+                if (flag == 1)
+                {
+                    MessageBox.Show("Món ăn này đã tồn tại", "Thông báo");
                 }
                 else
                 {
-                    MessageBox.Show("Thêm món ăn thất bại");
+                    if (this.txtFoodPrice.Text.ToString().Replace(" ", "") != "")
+                    {
+                        if (int.TryParse(this.txtFoodPrice.Text, out n))
+                        {
+                            gia = decimal.Parse(txtFoodPrice.Text);
+                            if (MonAnInfras.Instance.ThemMonAn(mam, tenm, gia) == 1)
+                            {
+                                MessageBox.Show("Thêm món ăn thành công");
+                                LoadFoodListF();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Thêm món ăn thất bại");
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Giá của món ăn phải là số", "Thông báo");
+                        }
+                    }
+                    else MessageBox.Show("Giá của món ăn phải là số", "Thông báo");
                 }
             }
-            else
-            {
-                MessageBox.Show("Giá của món ăn phải là số", "Thông báo");
-            }
+            else MessageBox.Show("Tên món ăn không được để trống", "Thông báo");
         }
         private void btnEditFood_Click(object sender, EventArgs e)
         {
@@ -188,29 +262,39 @@ namespace CleanArchQLNH
             string tenm = txtFoodName.Text;
             decimal gia;
             int n = 0;
-            //foreach(MONAN monan in dsmonan)
-           // {
-           //     if (monan.TenM !=)
-           //     {
-
-            //    }
-          //  }
-            if (int.TryParse(this.txtFoodPrice.Text, out n))
+            foreach(MONAN monan in dsmonan)
             {
-                gia = decimal.Parse(txtFoodPrice.Text);
-                if (MonAnInfras.Instance.SuaMonAn(mam, tenm, gia) == 1)
+                if (monan.MaM == mam)
                 {
-                    MessageBox.Show("Sửa món ăn thành công");
-                    LoadFoodListF();
+                    if(monan.TenM != tenm)
+                    {
+                        MessageBox.Show("Tên món ăn không được thay đổi", "Thông báo");
+                    }
+                    else
+                    {
+                        if (this.txtFoodPrice.Text.ToString().Replace(" ", "") != "")
+                        {
+                            if (int.TryParse(this.txtFoodPrice.Text, out n))
+                            {
+                                gia = decimal.Parse(txtFoodPrice.Text);
+                                if (MonAnInfras.Instance.SuaMonAn(mam, tenm, gia) == 1)
+                                {
+                                    MessageBox.Show("Sửa món ăn thành công");
+                                    LoadFoodListF();
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Sửa món ăn thất bại");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Giá của món ăn phải là số", "Thông báo");
+                            }
+                        }
+                        else MessageBox.Show("Giá của món ăn phải là số", "Thông báo");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Sửa món ăn thất bại");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Giá của món ăn phải là số", "Thông báo");
             }
         }
         private void btnDeleteFood_Click(object sender, EventArgs e)
@@ -307,20 +391,29 @@ namespace CleanArchQLNH
         private void btnEditTable_Click(object sender, EventArgs e)
         {
             string mab = txtTableID.Text;
-            string sokhach_toida = cmbMaxPeopleOnTable.Text;
             int tinhTrang;
             if (cbTableStatus1.Checked) tinhTrang = 1;
             else if (cbTableStatus2.Checked) tinhTrang = 2;
             else tinhTrang = 3;
-            if (BanAnInfras.Instance.SuaBanAn(int.Parse(mab), int.Parse(sokhach_toida), tinhTrang) == 1)
+            int n = 0;
+            if (this.cmbMaxPeopleOnTable.Text.ToString().Replace(" ", "") != "")
             {
-                MessageBox.Show("Cập nhật bàn ăn thành công", "Thông báo");
-                LoadTableListF();
+                if (int.TryParse(this.cmbMaxPeopleOnTable.Text, out n)) {
+                    string sokhach_toida = cmbMaxPeopleOnTable.Text;
+
+                    if (BanAnInfras.Instance.SuaBanAn(int.Parse(mab), int.Parse(sokhach_toida), tinhTrang) == 1)
+                    {
+                        MessageBox.Show("Cập nhật bàn ăn thành công", "Thông báo");
+                        LoadTableListF();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cập nhật thất bại", "Thông báo");
+                    }
+                }
+                else MessageBox.Show("Số khách phải là ký tự số", "Thông báo");
             }
-            else
-            {
-                MessageBox.Show("Cập nhật thất bại", "Thông báo");
-            }
+            else MessageBox.Show("Hãy nhập trường còn trống", "Thông báo");
         }
         private void btnSearchTable_Click(object sender, EventArgs e)
         {
@@ -394,23 +487,32 @@ namespace CleanArchQLNH
             string ngaykt = mtxtPromotionToDate.Text;
             string phantramkm;
             int n = 0;
-            if (int.TryParse(this.txtPromotionPercent.Text, out n))
+
+            if (this.txtPromotionName.Text.ToString().Replace(" ", "") != "" && this.mtxtPromotionFromDate.Text.ToString().Replace(" ", "") != "" && this.mtxtPromotionToDate.Text.ToString().Replace(" ", "") != "")
             {
-                phantramkm = txtPromotionPercent.Text;
-                if (KhuyenMaiInfras.Instance.ThemKhuyenMai(makm, tenkm, ngaybd, ngaykt, phantramkm) == 1)
+                if (this.txtPromotionPercent.Text.ToString().Replace(" ", "") != "")
                 {
-                    MessageBox.Show("Thêm chương trình khuyến mãi thành công", "Thông báo");
-                    LoadPromotionListF();
+                    if (int.TryParse(this.txtPromotionPercent.Text, out n))
+                    {
+                        phantramkm = txtPromotionPercent.Text;
+                        if (KhuyenMaiInfras.Instance.ThemKhuyenMai(makm, tenkm, ngaybd, ngaykt, phantramkm) == 1)
+                        {
+                            MessageBox.Show("Thêm chương trình khuyến mãi thành công", "Thông báo");
+                            LoadPromotionListF();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Thêm chương trình khuyến mãi thất bại", "Thông báo");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Phần trăm khuyến mãi phải là số", "Thông báo");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Thêm chương trình khuyến mãi thất bại", "Thông báo");
-                }
+                else MessageBox.Show("Phần trăm khuyến mãi không được để trống", "Thông báo");
             }
-            else
-            {
-                MessageBox.Show("Phần trăm khuyến mãi phải là số", "Thông báo");
-            }
+            else MessageBox.Show("Hãy điền vào trường còn trống", "Thông báo");
         }
         private void btnEditPromotion_Click(object sender, EventArgs e)
         {
@@ -420,23 +522,31 @@ namespace CleanArchQLNH
             string ngaykt = mtxtPromotionToDate.Text;
             string phantramkm;
             int n = 0;
-            if (int.TryParse(this.txtPromotionPercent.Text, out n))
+            if (this.txtPromotionName.Text.ToString().Replace(" ", "") != "" && this.mtxtPromotionFromDate.Text.ToString().Replace(" ", "") != "" && this.mtxtPromotionToDate.Text.ToString().Replace(" ", "") != "")
             {
-                phantramkm = txtPromotionPercent.Text;
-                if (KhuyenMaiInfras.Instance.SuaKhuyenMai(makm, tenkm, ngaybd, ngaykt, phantramkm) == 1)
+                if (this.txtPromotionPercent.Text.ToString().Replace(" ", "") != "")
                 {
-                    MessageBox.Show("Sửa chương trình khuyến mãi thành công", "Thông báo");
-                    LoadPromotionListF();
+                    if (int.TryParse(this.txtPromotionPercent.Text, out n))
+                    {
+                        phantramkm = txtPromotionPercent.Text;
+                        if (KhuyenMaiInfras.Instance.SuaKhuyenMai(makm, tenkm, ngaybd, ngaykt, phantramkm) == 1)
+                        {
+                            MessageBox.Show("Sửa chương trình khuyến mãi thành công", "Thông báo");
+                            LoadPromotionListF();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Sửa chương trình khuyến mãi thất bại", "Thông báo");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Phần trăm khuyến mãi phải là số", "Thông báo");
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Sửa chương trình khuyến mãi thất bại", "Thông báo");
-                }
+                else MessageBox.Show("Phần trăm khuyến mãi không được để trống", "Thông báo");
             }
-            else
-            {
-                MessageBox.Show("Phần trăm khuyến mãi phải là số", "Thông báo");
-            }
+            else MessageBox.Show("Hãy điền vào trường còn trống", "Thông báo");
         }
         private void btnDeletePromotion_Click(object sender, EventArgs e)
         {
@@ -564,77 +674,123 @@ namespace CleanArchQLNH
         {
             string manv = txtStaffID.Text;
             string hotennv = txtStaffName.Text;
-            string mail = txtStaffMail.Text;
             string ngaysinh = mtxtStaffDateOfBirth.Text;
             string diachi = txtStaffAddress.Text;
             string hoten_nguoilienhe = txtStaffContactName.Text;
             int machucvu = int.Parse(cmbStaffIdentity.SelectedValue.ToString());
             string matkhau = txtStaffPassWord.Text;
             int n = 0;
-            if (int.TryParse(this.txtStaffIdentity.Text, out n))
+            string formatMail = "@gmail.com";
+            if (this.txtStaffName.Text.Length != 0 && this.mtxtStaffDateOfBirth.Text.Length != 0 && this.txtStaffAddress.Text.Length != 0
+                && this.txtStaffContactName.Text.Length != 0 && this.txtStaffPassWord.Text.Length != 0)
             {
-                string cmnd = txtStaffIdentity.Text;
-                n = 0;
-                if (int.TryParse(this.txtStaffPhoneNumber.Text, out n))
+                if (this.txtStaffMail.Text.Contains(formatMail))
                 {
-                    string sdtnv = txtStaffPhoneNumber.Text;
-                    n = 0;
-                    if (int.TryParse(this.txtStaffContactPhoneNumber.Text, out n))
+                    string mail = txtStaffMail.Text;
+                    if (int.TryParse(this.txtStaffIdentity.Text, out n))
                     {
-                        string sdt_nguoilienhe = txtStaffContactPhoneNumber.Text;
-                        if (NhanVienInfras.Instance.ThemNhanVien(manv, hotennv, cmnd, sdtnv, mail, ngaysinh, diachi, hoten_nguoilienhe, sdt_nguoilienhe, machucvu, matkhau) == 1)
+                        if (this.txtStaffIdentity.Text.Length == 9)
                         {
-                            MessageBox.Show("Thêm nhân viên thành công", "Thông báo");
-                            LoadStaffListF();
+                            string cmnd = txtStaffIdentity.Text;
+                            n = 0;
+                            if (int.TryParse(this.txtStaffPhoneNumber.Text, out n))
+                            {
+                                if (this.txtStaffPhoneNumber.Text.Length == 10)
+                                {
+                                    string sdtnv = txtStaffPhoneNumber.Text;
+                                    n = 0;
+                                    if (int.TryParse(this.txtStaffContactPhoneNumber.Text, out n))
+                                    {
+                                        if (this.txtStaffContactPhoneNumber.Text.Length == 10)
+                                        {
+                                            string sdt_nguoilienhe = txtStaffContactPhoneNumber.Text;
+                                            if (NhanVienInfras.Instance.ThemNhanVien(manv, hotennv, cmnd, sdtnv, mail, ngaysinh, diachi, hoten_nguoilienhe, sdt_nguoilienhe, machucvu, matkhau) == 1)
+                                            {
+                                                MessageBox.Show("Thêm nhân viên thành công", "Thông báo");
+                                                LoadStaffListF();
+                                            }
+                                            else
+                                            {
+                                                MessageBox.Show("Thêm thất bại", "Thông báo");
+                                            }
+                                        }
+                                        else MessageBox.Show("Số điện thoại phải có đúng 10 ký tự", "Thông báo");
+                                    }
+                                    else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
+                                }
+                                else MessageBox.Show("Số điện thoại phải có đúng 10 ký tự", "Thông báo");
+                            }
+                            else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
                         }
-                        else
-                        {
-                            MessageBox.Show("Thêm thất bại", "Thông báo");
-                        }
+                        else MessageBox.Show("Chứng minh nhân dân phải có đúng 9 ký tự", "Thông báo");
                     }
-                    else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
+                    else MessageBox.Show("Chứng minh nhân dân chỉ được chứa ký tự số", "Thông báo");
                 }
-                else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
+                else MessageBox.Show("Mail phải theo định dạng 'example@gmail.com'", "Thông báo");
             }
-            else MessageBox.Show("Chứng minh nhân dân chỉ được chứa ký tự số", "Thông báo");
+            else MessageBox.Show("Không được để trống bất kỳ trường nào", "Thông báo");
         }
         private void btnEditStaff_Click(object sender, EventArgs e)
         {
             string manv = txtStaffID.Text;
             string hotennv = txtStaffName.Text;
-            string mail = txtStaffMail.Text;
             string ngaysinh = mtxtStaffDateOfBirth.Text;
             string diachi = txtStaffAddress.Text;
             string hoten_nguoilienhe = txtStaffContactName.Text;
             int machucvu = int.Parse(cmbStaffIdentity.SelectedValue.ToString());
             string matkhau = txtStaffPassWord.Text;
             int n = 0;
-            if (int.TryParse(this.txtStaffIdentity.Text, out n))
+            
+            string formatMail = "@gmail.com";
+            if (this.txtStaffName.Text.Length != 0 && this.mtxtStaffDateOfBirth.Text.Length != 0 && this.txtStaffAddress.Text.Length != 0
+                && this.txtStaffContactName.Text.Length != 0 && this.txtStaffPassWord.Text.Length != 0)
             {
-                string cmnd = txtStaffIdentity.Text;
-                n = 0;
-                if (int.TryParse(this.txtStaffPhoneNumber.Text, out n))
+                if (this.txtStaffMail.Text.Contains(formatMail))
                 {
-                    string sdtnv = txtStaffPhoneNumber.Text;
-                    n = 0;
-                    if (int.TryParse(this.txtStaffContactPhoneNumber.Text, out n))
+                    string mail = txtStaffMail.Text;
+                    if (int.TryParse(this.txtStaffIdentity.Text, out n))
                     {
-                        string sdt_nguoilienhe = txtStaffContactPhoneNumber.Text;
-                        if (NhanVienInfras.Instance.SuaNhanVien(manv, hotennv, cmnd, sdtnv, mail, ngaysinh, diachi, hoten_nguoilienhe, sdt_nguoilienhe, machucvu, matkhau) == 1)
+                        if (this.txtStaffIdentity.Text.Length == 9)
                         {
-                            MessageBox.Show("Sửa nhân viên thành công", "Thông báo");
-                            LoadStaffListF();
+                            string cmnd = txtStaffIdentity.Text;
+                            n = 0;
+                            if (int.TryParse(this.txtStaffPhoneNumber.Text, out n))
+                            {
+                                if (this.txtStaffPhoneNumber.Text.Length == 10)
+                                {
+                                    string sdtnv = txtStaffPhoneNumber.Text;
+                                    n = 0;
+                                    if (int.TryParse(this.txtStaffContactPhoneNumber.Text, out n))
+                                    {
+                                        if (this.txtStaffContactPhoneNumber.Text.Length == 10)
+                                        {
+                                            string sdt_nguoilienhe = txtStaffContactPhoneNumber.Text;
+                                            n = 0;
+                                            if (NhanVienInfras.Instance.SuaNhanVien(manv, hotennv, cmnd, sdtnv, mail, ngaysinh, diachi, hoten_nguoilienhe, sdt_nguoilienhe, machucvu, matkhau) == 1)
+                                            {
+                                                MessageBox.Show("Sửa nhân viên thành công", "Thông báo");
+                                                LoadStaffListF();
+                                            }
+                                            else
+                                            {
+                                                MessageBox.Show("Sửa thất bại", "Thông báo");
+                                            }
+                                        }
+                                        else MessageBox.Show("Số điện thoại phải có đúng 10 ký tự", "Thông báo");
+                                    }
+                                    else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
+                                }
+                                else MessageBox.Show("Số điện thoại phải có đúng 10 ký tự", "Thông báo");
+                            }
+                            else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
                         }
-                        else
-                        {
-                            MessageBox.Show("Sửa thất bại", "Thông báo");
-                        }
+                        else MessageBox.Show("Chứng minh nhân dân phải có đúng 9 ký tự", "Thông báo");
                     }
-                    else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
+                    else MessageBox.Show("Chứng minh nhân dân chỉ được chứa ký tự số", "Thông báo");
                 }
-                else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
+                else MessageBox.Show("Mail phải theo định dạng 'example@gmail.com'", "Thông báo");
             }
-            else MessageBox.Show("Chứng minh nhân dân chỉ được chứa ký tự số", "Thông báo");
+            else MessageBox.Show("Không được để trống bất kỳ trường nào", "Thông báo");
         }
         private void btnDeleteStaff_Click(object sender, EventArgs e)
         {

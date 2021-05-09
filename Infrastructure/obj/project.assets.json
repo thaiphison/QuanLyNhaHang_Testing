@@ -522,11 +522,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -543,8 +543,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj"
+            "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj": {
+              "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj"
             }
           }
         }

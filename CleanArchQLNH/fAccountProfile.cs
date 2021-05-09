@@ -78,36 +78,39 @@ namespace CleanArchQLNH
             string chucvu = txtPosition.Text.ToString();
             string matkhau = txtPassWord.Text;
             int n = 0;
-            if (int.TryParse(this.txtIdentity.Text, out n))
+            if (this.txtFullName.Text.Length != 0 && this.txtAddress.Text.Length != 0 && this.txtPassWord.Text.Length != 0)
             {
-                cmnd = txtIdentity.Text;
-                n = 0;
-                if (int.TryParse(this.txtPhoneNumber.Text, out n))
+                if (int.TryParse(this.txtIdentity.Text, out n))
                 {
-                    sdtnv = txtPhoneNumber.Text;
-                    UpdateAccountProfileInfras.Instance.UpdateAccountProfile(manv, hotennv, cmnd, sdtnv, diachi, chucvu, matkhau);
-                    if (UpdateAccountProfileInfras.Instance.UpdateAccountProfile(manv, hotennv, cmnd, sdtnv, diachi, chucvu, matkhau) == 1)
+                    if (this.txtIdentity.Text.Length == 9)
                     {
-                        MessageBox.Show("Cập nhật thông tin thành công", "Thông báo");
+                        cmnd = txtIdentity.Text;
+                        n = 0;
+                        if (int.TryParse(this.txtPhoneNumber.Text, out n))
+                        {
+                            if (this.txtPhoneNumber.Text.Length == 10)
+                            {
+                                sdtnv = txtPhoneNumber.Text;
+                                UpdateAccountProfileInfras.Instance.UpdateAccountProfile(manv, hotennv, cmnd, sdtnv, diachi, chucvu, matkhau);
+                                if (UpdateAccountProfileInfras.Instance.UpdateAccountProfile(manv, hotennv, cmnd, sdtnv, diachi, chucvu, matkhau) == 1)
+                                {
+                                    MessageBox.Show("Cập nhật thông tin thành công", "Thông báo");
+                                }
+                                if (eventUpdateAccount != null)
+                                {
+                                    eventUpdateAccount(this, new AccountEvent(CheckLoginInfras.Instance.GetNhanVienByMaNV(manv)));
+                                }
+                                else MessageBox.Show("Cập nhật thông tin thất bại", "Thông báo");
+                            }
+                            else MessageBox.Show("Số điện thoại phải có đúng 10 ký tự", "Thông báo");
+                        }
+                        else MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
                     }
-                    if (eventUpdateAccount != null)
-                    {
-                        eventUpdateAccount(this, new AccountEvent(CheckLoginInfras.Instance.GetNhanVienByMaNV(manv)));
-                    }
-                    else
-                    {
-                        MessageBox.Show("Cập nhật thông tin thất bại", "Thông báo");
-                    }
+                    else MessageBox.Show("CMND phải có đúng 9 ký tự", "Thông báo");
                 }
-                else
-                {
-                    MessageBox.Show("Số điện thoại chỉ được chứa ký tự số", "Thông báo");
-                }
+                else MessageBox.Show("CMND chỉ được chứa ký tự số", "Thông báo");
             }
-            else
-            {
-                MessageBox.Show("CMND chỉ được chứa ký tự số", "Thông báo");
-            }
+            else MessageBox.Show("Không được để trống bất kỳ trường nào", "Thông báo");
         }
 
         private event EventHandler<AccountEvent> eventUpdateAccount;

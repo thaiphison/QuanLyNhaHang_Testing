@@ -90,7 +90,12 @@ namespace CleanArchQLNH
             //Table
             BindingSource table = new BindingSource();
             table.DataSource = BanAnInfras.Instance.LoadTableList();
-            cmbGopBan.DataSource = table.DataSource;
+
+
+            BindingSource all_table = new BindingSource();
+            all_table.DataSource = BanAnInfras.Instance.LoadTableListI();
+
+            cmbGopBan.DataSource = all_table.DataSource;
             cmbGopBan.DisplayMember = "MaB";
             cbSwitchTable.DataSource = table.DataSource;
             cbSwitchTable.DisplayMember = "MaB";

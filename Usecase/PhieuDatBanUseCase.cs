@@ -50,8 +50,8 @@ namespace Usecase
         {
             List<PHIEUDATBAN> orderList = new List<PHIEUDATBAN>();
             string query = "SELECT DISTINCT MaPDB, MaB, PDB.MaKH, SDT_KH, NgayDat, GioDat FROM PHIEUDATBAN AS PDB, KHACHHANG AS KH" +
-                " WHERE TinhTrang = 'false' AND MaPDB LIKE '%" + noidung + "%' OR MaB = " + int.Parse(noidung) + " OR PDB.MaKH = '%" + noidung + "%'" +
-                " OR TinhTrang = 'false' AND NgayDat LIKE '%" + noidung + "%' AND PDB.MaKH = KH.MaKH OR TinhTrang = 'false' AND GioDat LIKE '%" + noidung + "%'" +
+                " WHERE TinhTrang = 'false' AND MaPDB LIKE '%" + noidung + "%' AND PDB.MaKH = KH.MaKH OR MaB LIKE '%" + noidung + "%' AND PDB.MaKH = KH.MaKH  OR PDB.MaKH LIKE '%" + noidung + "%' AND PDB.MaKH = KH.MaKH" +
+                " OR TinhTrang = 'false' AND NgayDat LIKE '%" + noidung.Replace('/', '-') + "%' AND PDB.MaKH = KH.MaKH OR TinhTrang = 'false' AND GioDat LIKE '%" + noidung + "%'" +
                 " AND PDB.MaKH = KH.MaKH OR TinhTrang = 'false' AND SDT_KH LIKE '%" + noidung + "%' AND PDB.MaKH = KH.MaKH";
             DataTable data = provider.ExecuteQuery(query);
             foreach (DataRow item in data.Rows)

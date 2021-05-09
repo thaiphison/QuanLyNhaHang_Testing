@@ -73,3 +73,18 @@ C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Usecase\obj\Debug\
 C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Usecase\obj\Debug\net5.0\Usecase.dll
 C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Usecase\obj\Debug\net5.0\ref\Usecase.dll
 C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Usecase\obj\Debug\net5.0\Usecase.pdb
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\bin\Debug\net5.0\Usecase.deps.json
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\bin\Debug\net5.0\Usecase.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\bin\Debug\net5.0\ref\Usecase.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\bin\Debug\net5.0\Usecase.pdb
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\bin\Debug\net5.0\Domain.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\bin\Debug\net5.0\Domain.pdb
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.csprojAssemblyReference.cache
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.csproj.CopyComplete
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\ref\Usecase.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Usecase\obj\Debug\net5.0\Usecase.pdb

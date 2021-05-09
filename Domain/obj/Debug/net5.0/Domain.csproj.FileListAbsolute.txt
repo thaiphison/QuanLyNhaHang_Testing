@@ -82,3 +82,15 @@ C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\n
 C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.dll
 C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\ref\Domain.dll
 C:\Users\HP\Desktop\IT\HK1-3\CNPM\QuanLyNhaHang - Copy - Copy\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\Admin\Source\Repos\QuanLyNhaHang_Testing\Domain\obj\Debug\net5.0\Domain.pdb

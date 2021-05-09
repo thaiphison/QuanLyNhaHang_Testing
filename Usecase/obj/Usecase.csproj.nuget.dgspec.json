@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj",
         "projectName": "Usecase",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Usecase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj"
+              "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj"
               }
             }
           }
