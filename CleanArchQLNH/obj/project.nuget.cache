@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IhDFdoOuCtDnLuT+3fVOKdyNKus/ERcv2TeESXCRlsxGq/CR2BsRAjoK7CCNCqoEGbHskKySAFCgkwnnpJ1czQ==",
+  "dgSpecHash": "13Ps+AoJXbV6KdnoFH+1KueDIQotv+znwMxPgOJRjeD1P4ihsXIjh4jt9CZ320iYMCOmQL9mXiVYT6rBJuIc/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\CleanArchQLNH\\CleanArchQLNH.csproj",
+  "projectFilePath": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\CleanArchQLNH\\CleanArchQLNH.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

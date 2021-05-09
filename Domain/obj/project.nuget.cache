@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KbVwH1omg/GhLDGWzCVPi1QRaIhn+De5IxL/lXXF3k0qKR2Lot9vqWa92gXllAwEfPaW2bSsvxRbWfzBRp9pgQ==",
+  "dgSpecHash": "lOXSVCi9dyqxY8aSkovptoumVNW0vWhIpyHl69fI587iSJfZO8zEKlK588wWvSypliPW08VVLtp9+B5BGS+OEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

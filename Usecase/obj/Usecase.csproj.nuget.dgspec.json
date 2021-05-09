@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj": {}
+    "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj": {
+    "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\obj\\",
+        "outputPath": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -60,22 +66,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj": {
+    "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj",
+        "projectUniqueName": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj",
         "projectName": "Usecase",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\Usecase.csproj",
+        "projectPath": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Usecase\\Usecase.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Usecase\\obj\\",
+        "outputPath": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Usecase\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -88,8 +100,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\QuanLyNhaHang\\Domain\\Domain.csproj"
+              "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Hoc\\KTPM\\Sang\\QuanLyNhaHang_Testing\\Domain\\Domain.csproj"
               }
             }
           }
@@ -124,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
