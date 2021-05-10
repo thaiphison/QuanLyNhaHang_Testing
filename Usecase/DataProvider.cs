@@ -11,7 +11,7 @@ namespace Usecase
 {
     public class DataProvider
     {
-        private string connectionSTR = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLNHAHANG;Integrated Security=True";
+        private string connectionSTR = @"Data Source=localhost;Initial Catalog=QLNHAHANG;Integrated Security=True";
         //private string connectionSTR = @"Data Source=(localdb)\ProjectsV13; Initial Catalog=QLNHAHANG";
         public DataTable ExecuteQuery(string query)
         {
