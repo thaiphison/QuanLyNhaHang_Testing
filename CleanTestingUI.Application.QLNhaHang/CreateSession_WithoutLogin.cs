@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CleanTestingUI.Application.QLNhaHang
 {
-    class CreateSession
+    class CreateSession_WithoutLogin
     {
         protected const string WindowsApplicationDriverUrl = "http://127.0.0.1:4723";
         private const string WpfAppId = @"D:\Hoc\KTPM\Sang\QuanLyNhaHang_Testing\CleanArchQLNH\bin\Debug\net5.0-windows\CleanArchQLNH.exe";
@@ -26,7 +26,20 @@ namespace CleanTestingUI.Application.QLNhaHang
                 session = new WindowsDriver<WindowsElement>(new Uri(WindowsApplicationDriverUrl), appiumOptions);
             }
         }
-
-
+        
     }
+
+
+
+
+    //[OneTimeTearDown]
+
+    //public void TearDown()
+
+    //{
+
+    //    session.Close();
+
+    //}
 }
+
